@@ -5,13 +5,14 @@ import {
   displayString,
 } from '../../../../../lib/dom-io/index.js';
 
-whenFormDataChanges('______', () => {
+whenFormDataChanges('nametag', () => {
   // debugger;
   console.log('\n--- form data changed ---');
 
   // --- read user input ---
-
+let name = readString("first") +' '+ readString("last");
   // --- create a greeting ---
-
+let greating = 'hello ' + name + '.'; 
   // --- display the greeting ---
+  displayString("greeting", greating)
 });

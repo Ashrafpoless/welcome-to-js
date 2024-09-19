@@ -8,6 +8,7 @@
 
 */
 
+
 // an empty string
 console.log('');
 
